@@ -17,4 +17,4 @@ def do_pack():
  {}Bytes".format(time, size))
         return('versions/web_static_{}.tgz'.format(time))
     else:
-        return False
+        return None
