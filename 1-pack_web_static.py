@@ -8,9 +8,9 @@ from os.path import getsize
 def do_pack():
     now = datetime.now()
     time = now.strftime("%Y%m%d%H%M%S")
-    local("mkdir versions")
+    local("mkdir -p versions")
     path_file = local(
-        "tar -cvzf versions/web_static_{}.tgz ./web_static".format(time))
+        "tar -cvzf versions/web_static_{}.tgz web_static".format(time))
     size = getsize("versions/web_static_{}.tgz".format(time))
     if path_file.succeeded:
         print("web_static packed: versions/web_static_{}.tgz ->\
