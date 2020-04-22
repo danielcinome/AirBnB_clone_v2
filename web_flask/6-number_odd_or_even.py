@@ -46,5 +46,5 @@ def number_odd_or_even(n):
         num_oe = 'odd'
     return render_template("6-number_odd_or_even.html", number=n, t_num=num_oe)
 
-
-app.run(host="0.0.0.0", port=5000)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000)
