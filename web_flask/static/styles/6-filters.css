@@ -27,14 +27,14 @@ h4 {
     font-weight: 400;
     font-size: 14px;
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 15px;
 }
 .popover {
     display: none;
     background-color: #FAFAFA;
     border: #DDDDDD 1px solid;
     border-radius: 4px;
-    padding: 10% 0% 10% 10%;
+    padding: 5% 0% 10% 10%;
     position: relative;
 }
 .popover li ul {
